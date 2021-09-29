@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { H1, MediumText } from "../styles/TextStyles"
 
 const HeroSection = () => {
   return (
@@ -44,14 +45,10 @@ const TextWrapper = styled.div`
   display: grid;
   gap: 30px;
 `
-const Title = styled.h1`
-  font-weight: bold;
-  font-size: 60px;
+const Title = styled(H1)`
   color: #fffffe;
 `
 
-const Description = styled.p`
-  font-size: 17px;
-  line-height: 130%;
+const Description = styled(MediumText)`
   color: #94a1b2;
 `
