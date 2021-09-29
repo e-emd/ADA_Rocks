@@ -1,8 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import styled from "styled-components"
 import { H1, MediumText } from "../styles/TextStyles"
 import { themes } from "../styles/ColorStyles"
+import MintButton from "../Buttons/MintButton"
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,6 @@ const HeroSection = () => {
       <Wrapper>
         <ContentWrapper>
           <TextWrapper>
-            {/* TEXT */}
             <img
               src="/images/logos/adaRockLogo1.png"
               alt="logo"
@@ -18,6 +18,7 @@ const HeroSection = () => {
                 borderRadius: "49%",
                 height: 75,
                 width: 75,
+                border: "3px solid #101010",
               }}
             />
             <Title>
@@ -30,9 +31,8 @@ const HeroSection = () => {
               </span>{" "}
               on the Cardano blockchain.
             </Description>
-            <Link to="/mint">Mint</Link>
+            <MintButton title="Mint" />
           </TextWrapper>
-          {/* IMAGE */}
         </ContentWrapper>
       </Wrapper>
     </>
