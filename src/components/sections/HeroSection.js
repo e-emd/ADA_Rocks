@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { H1, MediumText } from "../styles/TextStyles"
+import { themes } from "../styles/ColorStyles"
 
 const HeroSection = () => {
   return (
@@ -10,6 +11,15 @@ const HeroSection = () => {
         <ContentWrapper>
           <TextWrapper>
             {/* TEXT */}
+            <img
+              src="/images/logos/adaRockLogo1.png"
+              alt="logo"
+              style={{
+                borderRadius: "49%",
+                height: 75,
+                width: 75,
+              }}
+            />
             <Title>
               ADA <br /> Rocks
             </Title>
@@ -32,7 +42,7 @@ const HeroSection = () => {
 export default HeroSection
 
 const Wrapper = styled.div`
-  background: #16161a;
+  background: ${themes.dark.backgroundColor};
 `
 const ContentWrapper = styled.div`
   max-width: 1234px;
@@ -46,9 +56,9 @@ const TextWrapper = styled.div`
   gap: 30px;
 `
 const Title = styled(H1)`
-  color: #fffffe;
+  color: ${themes.dark.text1};
 `
 
 const Description = styled(MediumText)`
-  color: #94a1b2;
+  color: ${themes.dark.text3};
 `
